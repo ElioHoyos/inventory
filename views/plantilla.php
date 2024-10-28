@@ -48,7 +48,24 @@
     <script src="views/bower_components/datatables.net-bs/js/dataTables.responsive.min.js"></script>
     <script src="views/bower_components/datatables.net-bs/js/responsive.bootstrap.min.js"></script>
     <!-- SweetAlert 2 -->
-    <script src="views/plugins/"></script>
+    <script src="views/plugins/sweetalert2/sweetalert2.all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+    <!-- InputMask -->
+    <script src="views/plugins/input-mask/jquery.inputmask.js"></script>
+    <script src="views/plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+    <script src="views/plugins/input-mask/jquery.inputmask.extensions.js"></script>
+    <!-- iCheck -->
+    <script src="views/plugins/iCheck/icheck.min.js"></script>
+    <!-- jQuery Number -->
+    <script src="views/plugins/jqueryNumber/jquerynumber.min.js"></script>
+    <!-- datarangepicker -->
+    <script src="views/bower_components/moment/min/moment.min.js"></script>
+    <script src="views/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- morris.js -->
+    <script src="views/bower_components/raphael/raphael.min.js"></script>
+    <script src="views/bower_components/morris.js/morris.min.js"></script>
+    <!-- chart js -->
+    <script src="views/bower_components/Chart.js/Chart.js"></script>
 </head>
 <body>
     
