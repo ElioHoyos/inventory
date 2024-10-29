@@ -73,8 +73,7 @@
 <!-- Main content -->
 <section class="content container-fluid">
 
-    <h1>Hola</h1>
-
+    
 </section>
 <!-- /.content -->
 </div>
