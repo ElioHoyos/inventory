@@ -234,12 +234,27 @@ desired effect
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
-        <?php 
+        <!-- url amigables -->
+        <?php
+        // llamando al cabezote
+        include "modulos/cabezote.php";
         //llamando al menu
         include "modulos/menu.php";
+        if(isset($_GET["ruta"])){
+            if($_GET["ruta"] == "inicio"         ||
+               $_GET["ruta"] == "categoria.php"  ||
+               $_GET["ruta"] == "usuarios.php"   ||
+               $_GET["ruta"] == "productos.php"  ||
+               $_GET["ruta"] == "salir"){
+            include "modulos/".$_GET["ruta"].".php";
+            }else{
+                include "modulos/404.php";
+            }
+        }else{
+            include "modulos/inicio.php";
+        }
         // llamando a footer
         include "modulos/footer.php";
-
         ?>
         
     </div>
