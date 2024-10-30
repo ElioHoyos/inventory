@@ -116,6 +116,8 @@ desired effect
         ?>
         
     </div>
+    <!-- dataTable spanish -->
+    <script src="views/js/plantilla.js"></script>
 </body>
 
 </html>

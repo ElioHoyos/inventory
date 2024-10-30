@@ -71,10 +71,10 @@
 </section>
 
 <!-- Main content -->
-<section class="content container-fluid">
+<!-- <section class="content container-fluid">
 
     
-</section>
+</section> -->
 <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->

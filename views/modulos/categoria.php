@@ -41,7 +41,7 @@
          <tr>
            
            <th style="width:10px">#</th>
-           <th>Categoria</th>
+           <th>Nombre Categoria</th>
            <th>Acciones</th>
 
          </tr> 
@@ -49,8 +49,24 @@
         </thead>
 
         <tbody>
-          
-          <tr>
+          <?php
+            $item = null;
+            $valor = null;
+            $categorias = ControladorCategoria::ctrMostrarCategoria($item,$valor);
+            foreach ($categorias as $key => $value) {
+                echo '<tr>
+                    <td>'.($key+1).'</td>
+                    <td class="text-uppercase">'.$value["nombre"].'</td>
+                    <td>
+                      <div class="btn-group">
+                        <button class="btn btn-warning btnEditarCategoria" data-toggle="modal" data-target="#modalEditarCategoria"><i class="fa fa-pencil"></i></button>
+                        <button class="btn btn-danger btnEliminarCategoria"><i class="fa fa-times"></i></button>
+                      </div>
+                    </td>
+                </tr>';
+            }
+          ?>
+          <!-- <tr>
 
             <td>1</td>
 
@@ -68,29 +84,9 @@
 
             </td>
 
-          </tr>
+          </tr> -->
 
-          <tr>
-
-            <td>1</td>
-
-            <td>EQUIPOS ELECTROMECÁNICOS</td>
-            
-            <td>
-
-              <div class="btn-group">
-                  
-                <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
-
-                <button class="btn btn-danger"><i class="fa fa-times"></i></button>
-
-              </div>  
-
-            </td>
-
-          </tr>
-
-          <tr>
+          <!-- <tr>
 
             <td>1</td>
 
@@ -108,7 +104,27 @@
 
             </td>
 
-          </tr>
+          </tr> -->
+
+          <!-- <tr>
+
+            <td>1</td>
+
+            <td>EQUIPOS ELECTROMECÁNICOS</td>
+            
+            <td>
+
+              <div class="btn-group">
+                  
+                <button class="btn btn-warning"><i class="fa fa-pencil"></i></button>
+
+                <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+
+              </div>  
+
+            </td>
+
+          </tr> -->
 
         </tbody>
 
