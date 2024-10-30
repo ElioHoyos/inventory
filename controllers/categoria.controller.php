@@ -48,6 +48,40 @@ class ControladorCategoria{
 
     // Editar categorias
     public static function ctrEditarCategoria(){
-        
+        if(isset($_POST["editarCategoria"])){
+            if(preg_match('/^[a-zA-Z0-9ñÑáéíóúÁÉÍÓÚ ]+$/', $_POST["editarCategoria"])){
+                $tabla = "categorias";
+                $datos = array("nombre"=>$_POST["editarCategoria"],
+                              "id"=>$_POST["idCategoria"]);
+                $respuesta = ModeloCategoria::mdlEditarCategoria($tabla,$datos);
+                if($respuesta == "ok"){
+                    echo '<script>
+                        swal({
+                            type: "success",
+                            "title": "¡La Categoría ha sido cambiada correctamente!",
+                            showConfirmButton: true,
+                            confirmButton: "cerrar"
+                        }).then(function(result){
+                            if(result.value){
+                                window.location = "categoria";
+                            }
+                        })
+                    </script>';
+                }
+            }else{
+                echo '<script>
+                    swal({
+                            type: "error",
+                            "title": "¡La Categoría no puede ir vacía o llevar caracteres especiales!",
+                            showConfirmButton: true,
+                            confirmButton: "cerrar"
+                        }).then(function(result){
+                            if(result.value){
+                                window.location = "categoria";
+                            }
+                        })
+                </script>';
+            }
+        }
     }
 }

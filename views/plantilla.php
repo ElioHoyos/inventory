@@ -118,6 +118,8 @@ desired effect
     </div>
     <!-- dataTable spanish -->
     <script src="views/js/plantilla.js"></script>
+    <!-- categoria -->
+    <script src="views/js/categoria.js"></script>
 </body>
 
 </html>
