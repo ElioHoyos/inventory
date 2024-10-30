@@ -200,6 +200,11 @@ MODAL AGREGAR USUARIO
 
         </div>
 
+        <?php 
+          $crearCategoria = new ControladorCategoria();
+          $crearCategoria->ctrCrearCategoria();
+        ?>
+
       </form>
 
     </div>

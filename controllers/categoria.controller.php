@@ -10,9 +10,7 @@ class ControladorCategoria{
                 if($respuesta == "ok"){
                     echo '<script>
                         swal({
-                        position: "top-end",
                         type: "success",
-                        timer: 1500,
                         title: "La categoria ha sido registrado correctamente",
                         showConfirmButton: true,
                         confirmButtonText: "cerrar"
