@@ -144,9 +144,10 @@ CUERPO DOCUMENTO
 
     if(isset($_GET["ruta"])){
 
-      if($_GET["ruta"] == "inicio" ||
+      if($_GET["ruta"] == "inicio"     ||
          $_GET["ruta"] == "categorias" ||
-         $_GET["ruta"] == "productos" ||
+         $_GET["ruta"] == "productos"  ||
+         $_GET["ruta"] == "crear-venta" ||
          $_GET["ruta"] == "salir"){
 
         include "modulos/".$_GET["ruta"].".php";
@@ -173,6 +174,8 @@ CUERPO DOCUMENTO
 <script src="vistas/js/plantilla.js"></script>
 <script src="vistas/js/categorias.js"></script>
 <script src="vistas/js/productos.js"></script>
+<script src="vistas/js/ventas.js"></script>
+<script src="vistas/js/clientes.js"></script>
 
 <script>
   $(document).ready(function() {
