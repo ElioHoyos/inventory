@@ -160,7 +160,7 @@
                             
                             <div class="input-group">
                            
-                              <span class="input-group-addon"><i class="ion ion-social-usd"></i></span>
+                              <span class="input-group-addon"><i class="fa fa-money"></i></span>
 
                               <input type="text" class="form-control input-lg" id="nuevoTotalVenta" name="nuevoTotalVenta" total="" placeholder="00000" readonly required>
 
@@ -246,10 +246,12 @@
 
                  <tr>
                   <th style="width: 10px">#</th>
-                  <th>Imagen</th>
+                  <!-- <th>Imagen</th> -->
                   <th>Código</th>
                   <th>Descripcion</th>
                   <th>Stock</th>
+                  <th>Precio Venta</th>
+                  <th>Precio Mayor</th>
                   <th>Acciones</th>
                 </tr>
 
@@ -302,34 +304,7 @@ MODAL AGREGAR CLIENTE
 
           <div class="box-body">
 
-            <!-- BUSCAR POR DNI/RUC -->
-            <div class="form-group">
-              
-              <div class="input-group col-lg-6">
-              
-                <span class="input-group-addon"><i class="fa fa-th"></i></span> 
-
-                  <select name="tipo_documento" id="tipo_documento" class="form-control input-sm" required>
-                    <option value="DNI">DNI</option>
-                    <option value="RUC">RUC</option>
-                  </select>
-                  
-              </div>
-              
-            </div>
-
-            <!-- botton -->
-            <div class="form-group">
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"><i class="fa fa-search"></i></span> 
-
-                <button type="button" id="show_password" class="btn btn-success pull-left" onclick="buscarDocuemnto()">Buscar</button>
-
-              </div>
-
-            </div>
+            
             <!-- ENTRADA PARA EL DOCUMENTO ID -->
             
             <div class="form-group">

@@ -127,7 +127,7 @@ $(".tablaVentas tbody").on("click", "button.agregarProducto", function(){
 
 	            '<div class="input-group">'+
 
-	              '<span class="input-group-addon"><i class="ion ion-social-usd"></i></span>'+
+	              '<span class="input-group-addon"><i class="fa fa-money"></i></span>'+
 	                 
 	              '<input type="text" class="form-control nuevoPrecioProducto" precioReal="'+precio+'" name="nuevoPrecioProducto" value="'+precio+'" readonly required>'+
 	 
@@ -307,7 +307,7 @@ $(".btnAgregarProducto").click(function(){
 
 	            '<div class="input-group">'+
 
-	              '<span class="input-group-addon"><i class="ion ion-social-usd"></i></span>'+
+	              '<span class="input-group-addon"><i class="fa fa-money"></i></span>'+
 	                 
 	              '<input type="text" class="form-control nuevoPrecioProducto" precioReal="" name="nuevoPrecioProducto" readonly required>'+
 	 
@@ -549,7 +549,7 @@ $("#nuevoMetodoPago").change(function(){
 
 			 	'<div class="input-group">'+ 
 
-			 		'<span class="input-group-addon"><i class="ion ion-social-usd"></i></span>'+ 
+			 		'<span class="input-group-addon"><i class="fa fa-money"></i></span>'+ 
 
 			 		'<input type="text" class="form-control" id="nuevoValorEfectivo" placeholder="000000" required>'+
 
@@ -561,7 +561,7 @@ $("#nuevoMetodoPago").change(function(){
 
 			 	'<div class="input-group">'+
 
-			 		'<span class="input-group-addon"><i class="ion ion-social-usd"></i></span>'+
+			 		'<span class="input-group-addon"><i class="fa fa-money"></i></span>'+
 
 			 		'<input type="text" class="form-control" id="nuevoCambioEfectivo" placeholder="000000" readonly required>'+
 
